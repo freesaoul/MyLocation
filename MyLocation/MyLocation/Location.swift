@@ -9,8 +9,9 @@
 import Foundation
 import CoreData
 import CoreLocation
+import MapKit
 
-class Location: NSManagedObject {
+class Location: NSManagedObject, MKAnnotation {
 
 // MARK: - Property
     
@@ -21,4 +22,22 @@ class Location: NSManagedObject {
     @NSManaged var longitude: Double
     @NSManaged var placemark: CLPlacemark?
 
+// MARK: - MKAnnotation Protocol
+    
+    var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+    }
+   
+    var title: String! {
+        if locationDescription.isEmpty {
+            return "(No Description)"
+        } else {
+            return locationDescription
+        }
+    }
+    
+    var subtitle: String! {
+        return category
+    }
+    
 }

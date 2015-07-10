@@ -22,6 +22,8 @@
 		8BE9E6B01B4EB2F600CC3CFA /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE9E6AF1B4EB2F600CC3CFA /* Functions.swift */; };
 		8BE9E6B31B4EBA4700CC3CFA /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BE9E6B11B4EBA4700CC3CFA /* DataModel.xcdatamodeld */; };
 		8BED30971B4FAC60002C7B8A /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED30961B4FAC60002C7B8A /* LocationCell.swift */; };
+		8BED30991B4FD514002C7B8A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BED30981B4FD514002C7B8A /* MapKit.framework */; };
+		8BED309B1B4FD67B002C7B8A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED309A1B4FD67B002C7B8A /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		8BE9E6AF1B4EB2F600CC3CFA /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		8BE9E6B21B4EBA4700CC3CFA /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		8BED30961B4FAC60002C7B8A /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		8BED30981B4FD514002C7B8A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8BED309A1B4FD67B002C7B8A /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BED30991B4FD514002C7B8A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 		8BE832D51B4D1249006C6611 = {
 			isa = PBXGroup;
 			children = (
+				8BED30981B4FD514002C7B8A /* MapKit.framework */,
 				8BE832E01B4D1249006C6611 /* MyLocation */,
 				8BE832F81B4D1249006C6611 /* MyLocationTests */,
 				8BE832DF1B4D1249006C6611 /* Products */,
@@ -101,6 +107,7 @@
 				8BE9E6A71B4E6F0800CC3CFA /* CategoryPickerViewController.swift */,
 				8B1193AB1B4EE32000DBF317 /* LocationsViewController.swift */,
 				8BED30961B4FAC60002C7B8A /* LocationCell.swift */,
+				8BED309A1B4FD67B002C7B8A /* MapViewController.swift */,
 				8BE9E6A91B4E8E8C00CC3CFA /* HudView.swift */,
 				8BE9E6AF1B4EB2F600CC3CFA /* Functions.swift */,
 				8BE832E71B4D1249006C6611 /* SecondViewController.swift */,
@@ -246,6 +253,7 @@
 				8BE9E6AA1B4E8E8C00CC3CFA /* HudView.swift in Sources */,
 				8B1193AA1B4EBEFF00DBF317 /* Location.swift in Sources */,
 				8BED30971B4FAC60002C7B8A /* LocationCell.swift in Sources */,
+				8BED309B1B4FD67B002C7B8A /* MapViewController.swift in Sources */,
 				8BE9E6B01B4EB2F600CC3CFA /* Functions.swift in Sources */,
 				8BE832E41B4D1249006C6611 /* AppDelegate.swift in Sources */,
 				8BE9E6A81B4E6F0800CC3CFA /* CategoryPickerViewController.swift in Sources */,
